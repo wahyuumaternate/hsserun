@@ -27,7 +27,6 @@ class PesertaExport implements FromCollection, WithHeadings, WithMapping
             'bukti_bayar',
             'status',
             'id_road_race',
-            // 'id_kategori',
             'created_at'
         ]);
     }
@@ -50,9 +49,7 @@ class PesertaExport implements FromCollection, WithHeadings, WithMapping
             'Size Jersey',
             'Bukti Bayar',
             'Status',
-            
             'Kategiori Road Race',
-            // 'Kategori Usia',
             'Tanggal Dibuat',
         ];
     }
@@ -64,7 +61,7 @@ class PesertaExport implements FromCollection, WithHeadings, WithMapping
     {
         return [
             $peserta->nama_lengkap,
-            "'" . (string)$peserta->nik,$peserta->nik,
+            "'" . (string)$peserta->nik,
             $peserta->golongan_darah,
             $peserta->pekerjaan,
             $peserta->no_tlp,
@@ -75,9 +72,7 @@ class PesertaExport implements FromCollection, WithHeadings, WithMapping
             $peserta->size_jersey,
             $peserta->bukti_bayar,
             $peserta->status,
-            
             $peserta->roadRace->nama.'K',
-            // $peserta->kategori->name === 'Tidak Ada' ? '-' : $peserta->kategori->name,
             $peserta->created_at->timezone('Asia/Jayapura')->format('Y-m-d H:i:s'),
         ];
     }
