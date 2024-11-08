@@ -84,7 +84,7 @@
     <!-- Kategori Section -->
     <section id="kategori" class="mx-auto px-4 text-center py-8">
         <h2 class="text-3xl font-bold text-yellow-400 mb-4" data-aos="fade-up">KATEGORI PELARI</h2>
-        <div class="sm:mt-8 bg-cover bg-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6 py-8 md:px-8 justify-items-center bg-none sm:bg-[url('/assets/img/road.png')]"
+        <div class="sm:mt-8 bg-cover bg-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6 py-8 md:px-8 justify-items-center bg-none sm:bg-[{{ asset('storage/' . $tentang->gambar_tentang) }}]"
             data-aos="zoom-out">
             @if ($kategori->isEmpty())
                 <p class="text-gray-600 text-lg" data-aos="fade-up">Tidak ada kategori pelari</p>
