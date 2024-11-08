@@ -56,13 +56,13 @@
                                 <td>{{ $peserta->kontak_darurat }}</td>
                             </tr>
                             <tr>
-                                <th>Kategori Usia</th>
-                                @if ($peserta->kategori->id != 1)
-                                    <td>{{ $peserta->kategori->name }} {{ $peserta->kategori->umur }}
-                                        ({{ $peserta->kategori->gender }})</td>
-                                @else
-                                    <td>-</td>
-                                @endif
+                                <th>Status</th>
+                                <td>
+                                    <a href="javascript:void(0)"
+                                        class="btn {{ $peserta->status == 'terverifikasi' ? 'btn-success' : 'btn-danger' }} text-light">
+                                        {{ $peserta->status }}
+                                    </a>
+                                </td>
 
                             </tr>
                             <tr>
@@ -76,7 +76,8 @@
                             <tr>
                                 <th>Bukti Bayar</th>
                                 <td>
-                                    <a href="{{ asset('storage/' . $peserta->bukti_bayar) }}" target="_blank">Lihat
+                                    <a class="btn btn-secondary" href="{{ asset('storage/' . $peserta->bukti_bayar) }}"
+                                        target="_blank">Lihat
                                         Bukti</a>
                                 </td>
                             </tr>

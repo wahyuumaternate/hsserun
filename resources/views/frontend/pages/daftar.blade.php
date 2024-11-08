@@ -160,10 +160,10 @@
                                 class="mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 
         @error('golongan_darah') border-red-500 @enderror">
                                 <option value="">-- Pilih Golongan Darah --</option>
-                                <option value="a" {{ old('golongan_darah') == 'a' ? 'selected' : '' }}>A</option>
-                                <option value="b" {{ old('golongan_darah') == 'b' ? 'selected' : '' }}>B</option>
-                                <option value="ab" {{ old('golongan_darah') == 'ab' ? 'selected' : '' }}>AB</option>
-                                <option value="o" {{ old('golongan_darah') == 'o' ? 'selected' : '' }}>O</option>
+                                <option value="A" {{ old('golongan_darah') == 'a' ? 'selected' : '' }}>A</option>
+                                <option value="B" {{ old('golongan_darah') == 'b' ? 'selected' : '' }}>B</option>
+                                <option value="AB" {{ old('golongan_darah') == 'ab' ? 'selected' : '' }}>AB</option>
+                                <option value="0" {{ old('golongan_darah') == 'o' ? 'selected' : '' }}>O</option>
                             </select>
                             @error('golongan_darah')
                                 <p class="text-sm text-red-600 mt-1">{{ $message }}</p>
@@ -171,31 +171,7 @@
                         </div>
 
                         <input type="hidden" name="id_road_race" id="" value="{{ $road_race->id }}">
-                        @if ($road_race->nama == 10)
-                            <!-- Kategori Usia -->
-                            <div class="col-span-1">
-                                <label for="kategori_usia" class="block text-sm font-medium text-gray-700">Kategori
-                                    Usia</label>
-                                <select name="id_kategori" id="kategori_usia" required
-                                    class="mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500
-                                @error('id_kategori') border-red-500 @enderror">
-                                    <option value="">-- Pilih Kategori Usia --</option>
-                                    @foreach ($kategori as $ku)
-                                        @if ($ku->id != 1)
-                                            <option value="{{ $ku->id }}"
-                                                {{ old('id_kategori') == $ku->id ? 'selected' : '' }}>
-                                                {{ $ku->name }} ({{ $ku->umur }})
-                                            </option>
-                                        @endif
-                                    @endforeach
-                                </select>
-                                @error('id_kategori')
-                                    <p class="text-sm text-red-600 mt-1">{{ $message }}</p>
-                                @enderror
-                            </div>
-                        @else
-                            <input type="hidden" name="id_kategori" id="" value="1">
-                        @endif
+                        <input type="hidden" name="id_kategori" id="" value="1">
 
                         <!-- Size Jersey -->
                         <div class="col-span-1">

@@ -227,6 +227,33 @@
 
     </section>
 
+    <!-- Sponsor Section -->
+    <section id="sponsors" class="mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Header -->
+        <h2 class="col-span-1 md:col-span-4 text-3xl font-bold text-yellow-400 mb-6 text-center" data-aos="fade-up">Our
+            Sponsors</h2>
+
+        <!-- Sponsor 1 -->
+        <div class="flex justify-center items-center" data-aos="fade-up">
+            <img src="{{ asset('assets/img/logo-hsse.png') }}" alt="Sponsor 1" class="w-full max-w-xs rounded-lg">
+        </div>
+
+        <!-- Sponsor 2 -->
+        <div class="flex justify-center items-center" data-aos="fade-up">
+            <img src="{{ asset('assets/img/ternate-berlari.png') }}" alt="Sponsor 2" class="w-full max-w-xs rounded-lg">
+        </div>
+
+        <!-- Sponsor 3 -->
+        <div class="flex justify-center items-center" data-aos="fade-up">
+            <img src="{{ asset('assets/img/ternatesport.png') }}" alt="Sponsor 3" class="w-full max-w-xs rounded-lg">
+        </div>
+
+        <!-- Sponsor 4 -->
+        <div class="flex justify-center items-center" data-aos="fade-up">
+            <img src="{{ asset('assets/img/antam-logo.png') }}" alt="Sponsor 4" class="w-full max-w-xs rounded-lg">
+        </div>
+    </section>
+
     <!-- Scroll to Top Button -->
     @include('frontend.components.to-top')
 

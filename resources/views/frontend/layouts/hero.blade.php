@@ -9,7 +9,7 @@
                     Selamat datang di Website {{ $websiteTitle }}
                 </h1>
                 <p class="text-lg font-semibold md:text-xl lg:text-2xl text-white mb-6 lg:mb-8">
-                    {{ $websiteTitle }} adalah sebuah ajang lari yang menyatukan komunitas pecinta olahraga di Ternate,
+                    {{ $websiteTitle }} adalah sebuah ajang lari yang menyatukan komunitas pecinta olahraga di Buli,
                     menawarkan
                     pengalaman lari di antara pemandangan indah serta budaya kaya khas Kepulauan Maluku Utara.
                 </p>
@@ -52,7 +52,7 @@
 
         <!-- Gambar Hero -->
         <div class="hidden lg:flex lg:col-span-5 justify-center lg:justify-end items-center">
-            <img src="{{ asset('assets/img/hero.png') }}" alt="Running Girl"
+            <img src="{{ asset('assets/img/logo-hsse.png') }}" alt="Running Girl"
                 class="w-80 max-w-xl md:max-w-md lg:max-w-lg h-auto object-contain">
         </div>
     </div>

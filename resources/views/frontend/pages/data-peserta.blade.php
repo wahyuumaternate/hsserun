@@ -96,22 +96,22 @@
 @endsection
 
 @section('js')
-    <!-- jQuery and Bootstrap JS for Tabs -->
+    {{-- <!-- jQuery and Bootstrap JS for Tabs -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
 
     <!-- DataTables CSS and JS -->
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
-    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script> --}}
 
     <script>
         $(document).ready(function() {
             $('.datatable').DataTable({
-                "order": [], // By default, it will be unsorted; you can set initial sorting here.
-                "language": {
-                    "search": "Cari di tabel:" // Customizes the search field placeholder text.
-                }
+                "order": [],
+                "searching": false, // Disables the search bar
+                "bFilter": false, // Alternative setting to disable the search bar
+                "dom": 'lrtip' // This setting controls the table layout and removes the search input
             });
         });
     </script>
