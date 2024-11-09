@@ -6,6 +6,7 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\Exports\\PesertaExport' => $baseDir . '/app/Exports/PesertaExport.php',
     'App\\Http\\Controllers\\Auth\\AuthenticatedSessionController' => $baseDir . '/app/Http/Controllers/Auth/AuthenticatedSessionController.php',
     'App\\Http\\Controllers\\Auth\\ConfirmablePasswordController' => $baseDir . '/app/Http/Controllers/Auth/ConfirmablePasswordController.php',
     'App\\Http\\Controllers\\Auth\\EmailVerificationNotificationController' => $baseDir . '/app/Http/Controllers/Auth/EmailVerificationNotificationController.php',
@@ -2646,6 +2647,9 @@ return array(
     'Jean85\\Exception\\VersionMissingExceptionInterface' => $vendorDir . '/jean85/pretty-package-versions/src/Exception/VersionMissingExceptionInterface.php',
     'Jean85\\PrettyVersions' => $vendorDir . '/jean85/pretty-package-versions/src/PrettyVersions.php',
     'Jean85\\Version' => $vendorDir . '/jean85/pretty-package-versions/src/Version.php',
+    'Ladumor\\LaravelPwa\\LaravelPwa' => $vendorDir . '/ladumor/laravel-pwa/src/LaravelPwa.php',
+    'Ladumor\\LaravelPwa\\PWAServiceProvider' => $vendorDir . '/ladumor/laravel-pwa/src/PWAServiceProvider.php',
+    'Ladumor\\LaravelPwa\\commands\\PublishPWA' => $vendorDir . '/ladumor/laravel-pwa/src/commands/PublishPWA.php',
     'Laravel\\Breeze\\BreezeServiceProvider' => $vendorDir . '/laravel/breeze/src/BreezeServiceProvider.php',
     'Laravel\\Breeze\\Console\\InstallCommand' => $vendorDir . '/laravel/breeze/src/Console/InstallCommand.php',
     'Laravel\\Breeze\\Console\\InstallsApiStack' => $vendorDir . '/laravel/breeze/src/Console/InstallsApiStack.php',
