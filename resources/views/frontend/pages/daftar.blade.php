@@ -34,7 +34,7 @@
                     </div>
                     <h3 class="text-5xl font-bold text-gray-600 mb-2">{{ $road_race->nama }}<span
                             class="text-base">KM</span></h3>
-                    <div class="text-2xl font-bold text-yellow-400 mb-2">Rp. {{ $road_race->biaya }}</div>
+                    <div class="text-2xl font-bold text-orange-400 mb-2">Rp. {{ $road_race->biaya }}</div>
 
                     <ul class="text-sm text-gray-400 space-y-2 m-4 text-left">
                         <li>✔️ Jersey Running</li>

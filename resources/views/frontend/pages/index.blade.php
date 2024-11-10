@@ -8,22 +8,22 @@
     @endphp
     <!-- Pricing Section -->
     <section id="pendaftaran" class="mx-auto pb-12 px-4 max-w-5xl">
-        <h2 class="text-3xl font-bold text-yellow-400 text-center py-16" data-aos="fade-up">PENDAFTARAN</h2>
+        <h2 class="text-3xl font-bold text-orange-400 text-center py-16" data-aos="fade-up">PENDAFTARAN</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             @foreach ($road_race as $road_races)
                 @if ($road_races->paling_laris == 1)
                     <!-- Card dengan Border Kuning -->
-                    <div class="border-2 border-yellow-400 rounded-lg text-center shadow-xl" data-aos="fade-up">
-                        <h3 class="text-md w-36 rounded-b-md lg:ml-20 ml-28  font-bold bg-yellow-400 text-white">PALING LARIS
+                    <div class="border-2 border-orange-400 rounded-lg text-center shadow-xl" data-aos="fade-up">
+                        <h3 class="text-md w-36 rounded-b-md lg:ml-20 ml-28  font-bold bg-orange-400 text-white">PALING LARIS
                         </h3>
                         <div class="p-6">
                             <h3 class="text-5xl font-bold text-gray-600 mb-2">{{ $road_races->nama }} <span
                                     class="text-base">KM</span>
                             </h3>
-                            <div class="text-2xl font-bold text-yellow-400 mb-2">Rp. {{ $road_races->biaya }}</div>
+                            <div class="text-2xl font-bold text-orange-400 mb-2">Rp. {{ $road_races->biaya }}</div>
                             @if (!$tanggalEvent->isPast())
                                 <a href="{{ route('daftar', $road_races->id) }}"
-                                    class="block py-2 px-4 mt-9 bg-yellow-400 text-white rounded-lg hover:bg-yellow-500 mb-4">
+                                    class="block py-2 px-4 mt-9 bg-orange-400 text-white rounded-lg hover:bg-orange-500 mb-4">
                                     Pilih Paket
                                 </a>
                             @endif
@@ -43,10 +43,10 @@
                         <h3 class="text-5xl font-bold text-gray-600 mb-2">{{ $road_races->nama }} <span
                                 class="text-base">KM</span>
                         </h3>
-                        <div class="text-2xl font-bold text-yellow-400 mb-2">Rp. {{ $road_races->biaya }}</div>
+                        <div class="text-2xl font-bold text-orange-400 mb-2">Rp. {{ $road_races->biaya }}</div>
                         @if (!$tanggalEvent->isPast())
                             <a href="{{ route('daftar', $road_races->id) }}"
-                                class="block py-2 px-4 mt-9 bg-yellow-400 text-white rounded-lg hover:bg-yellow-500 mb-4">
+                                class="block py-2 px-4 mt-9 bg-orange-400 text-white rounded-lg hover:bg-orange-500 mb-4">
                                 Pilih Paket
                             </a>
                         @endif
@@ -74,7 +74,7 @@
 
         <!-- Text -->
         <div class="w-full md:w-1/2 md:pl-8" data-aos="fade-up">
-            <h2 class="text-3xl font-bold text-yellow-400 mb-4" data-aos="fade-up">TENTANG KAMI</h2>
+            <h2 class="text-3xl font-bold text-orange-400 mb-4" data-aos="fade-up">TENTANG KAMI</h2>
             <p class="text-gray-600 mb-4">
                 {!! $tentang->deskripsi_tentang ?? 'Tentang kami tidak ditemukan.' !!}
             </p>
@@ -83,7 +83,7 @@
 
     <!-- Kategori Section -->
     {{-- <section id="kategori" class="mx-auto px-4 text-center py-8">
-        <h2 class="text-3xl font-bold text-yellow-400 mb-4" data-aos="fade-up">KATEGORI PELARI</h2>
+        <h2 class="text-3xl font-bold text-orange-400 mb-4" data-aos="fade-up">KATEGORI PELARI</h2>
         <div class="sm:mt-8 bg-cover bg-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6 py-8 md:px-8 justify-items-center bg-none sm:bg-[{{ asset('storage/' . $tentang->gambar_tentang) }}]"
             data-aos="zoom-out">
             @if ($kategori->isEmpty())
@@ -106,7 +106,7 @@
     <!-- Shirt Size -->
     <section id="jersey" class="mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 gap-8">
         <!-- Header -->
-        <h2 class="col-span-1 md:col-span-2 text-3xl font-bold text-yellow-400 mb-6 text-center" data-aos="fade-up">UKURAN
+        <h2 class="col-span-1 md:col-span-2 text-3xl font-bold text-orange-400 mb-6 text-center" data-aos="fade-up">UKURAN
             JERSEY</h2>
 
         <!-- Column 1: Pria -->
@@ -232,7 +232,7 @@
     <!-- Sponsor Section -->
     <section id="sponsors" class="mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
         <!-- Header -->
-        <h2 class="col-span-1 md:col-span-4 text-3xl font-bold text-yellow-400 mb-6 text-center" data-aos="fade-up">Our
+        <h2 class="col-span-1 md:col-span-4 text-3xl font-bold text-orange-400 mb-6 text-center" data-aos="fade-up">Our
             Sponsors</h2>
 
         <!-- Sponsor 1 -->

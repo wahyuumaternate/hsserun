@@ -3,7 +3,7 @@
     <style>
         /* Warna kuning untuk tab yang aktif */
         .nav-tabs .nav-link.active {
-            background-color: #FFC107 !important;
+            background-color: #FAB12F !important;
             /* Warna kuning */
             color: #000 !important;
             /* Warna teks hitam */
@@ -18,7 +18,7 @@
 
         .nav-tabs button:hover {
             /* Warna kuning */
-            background-color: #ffc107cc !important;
+            background-color: #FAB12F !important;
             color: #000 !important;
             /* Warna teks hitam */
             border: #000 1px solid;
@@ -39,7 +39,7 @@
                     <ul class="nav nav-tabs" id="packageTabs" role="tablist">
                         @foreach ($data_peserta->groupBy('roadRace.nama') as $package => $participants)
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link {{ $loop->first ? 'active text-yellow' : '' }} m-1"
+                                <button class="nav-link {{ $loop->first ? 'active text-orange' : '' }} m-1"
                                     id="tab-{{ $package }}-tab" data-bs-toggle="tab"
                                     data-bs-target="#tab-{{ $package }}" type="button" role="tab"
                                     aria-controls="tab-{{ $package }}" aria-selected="true">

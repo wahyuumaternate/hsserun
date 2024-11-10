@@ -1,6 +1,6 @@
 <!-- Hero Section -->
 <section
-    class="min-h-screen flex items-center bg-gradient-to-t from-gray-100 to-yellow-400 justify-center px-24 md:px-8 lg:px-16">
+    class="min-h-screen flex items-center bg-gradient-to-t from-gray-100 to-orange-500 justify-center px-24 md:px-8 lg:px-16">
     <div class="grid mx-auto gap-6 md:gap-8 lg:py-16 lg:grid-cols-12">
         <!-- Teks Hero -->
         <div class="place-self-center col-span-2 lg:col-span-7 lg:text-left">
@@ -18,22 +18,22 @@
             <!-- Waktu Hitung Mundur -->
             <div class="mb-6">
                 <div id="countdown"
-                    class="text-xl md:text-2xl flex justify-center lg:justify-center gap-2 font-semibold text-yellow-400 font-shadow-xl">
+                    class="text-xl md:text-2xl flex justify-center lg:justify-center gap-2 font-semibold text-orange-400 font-shadow-xl">
                     <div class="block w-16 md:w-20 bg-white p-2 rounded text-center shadow-lg">
                         <span id="days">00</span>
-                        <div class="text-xs md:text-sm text-yellow-400 mt-2 font-bold">Hari</div>
+                        <div class="text-xs md:text-sm text-orange-400 mt-2 font-bold">Hari</div>
                     </div>
                     <div class="block w-16 md:w-20 bg-white p-2 rounded text-center shadow-lg">
                         <span id="hours">00</span>
-                        <div class="text-xs md:text-sm text-yellow-400 mt-2 font-bold">Jam</div>
+                        <div class="text-xs md:text-sm text-orange-400 mt-2 font-bold">Jam</div>
                     </div>
                     <div class="block w-16 md:w-20 bg-white p-2 rounded text-center shadow-lg">
                         <span id="minutes">00</span>
-                        <div class="text-xs md:text-sm text-yellow-400 mt-2 font-bold">Menit</div>
+                        <div class="text-xs md:text-sm text-orange-400 mt-2 font-bold">Menit</div>
                     </div>
                     <div class="block w-16 md:w-20 bg-white p-2 rounded text-center shadow-lg">
                         <span id="seconds">00</span>
-                        <div class="text-xs md:text-sm text-yellow-400 mt-2 font-bold">Detik</div>
+                        <div class="text-xs md:text-sm text-orange-400 mt-2 font-bold">Detik</div>
                     </div>
                 </div>
                 @php
@@ -42,7 +42,7 @@
                 @if (!$tanggalEvent->isPast())
                     <div class="mt-6 lg:mt-9 justify-self-center">
                         <a href="#pendaftaran"
-                            class="block w-full lg:w-52 px-3 py-2 text-center text-xl font-bold bg-yellow-400 text-white rounded-lg hover:bg-yellow-500 shadow-xl">
+                            class="block w-full lg:w-52 px-3 py-2 text-center text-xl font-bold bg-orange-400 text-white rounded-lg hover:bg-orange-500 shadow-xl">
                             Daftar Sekarang
                         </a>
                     </div>
