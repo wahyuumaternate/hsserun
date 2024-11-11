@@ -113,6 +113,8 @@
             /* Change text color on hover */
         }
     </style>
+
+    @stack('css')
 </head>
 
 <body>

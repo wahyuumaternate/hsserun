@@ -1,4 +1,4 @@
-@extends('backend.layouts.main', ['title' => 'Dashboard'])
+@extends('backend.layouts.main', ['title' => 'Detail Peserta'])
 @section('main')
     <div class="pagetitle">
         <h1>Detail Peserta</h1>

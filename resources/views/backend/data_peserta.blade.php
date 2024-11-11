@@ -1,4 +1,36 @@
-@extends('backend.layouts.main', ['title' => 'Dashboard'])
+@extends('backend.layouts.main', ['title' => 'Data Peserta'])
+@push('css')
+    <style>
+        /* Styling untuk dropdown entries per page */
+        .datatable-dropdown .datatable-selector {
+            border: 1px solid #000 !important;
+            /* Atur ketebalan dan warna border */
+            padding: 5px;
+            border-radius: 4px;
+            box-sizing: border-box;
+            outline: none;
+            /* Hapus outline untuk tampilan yang lebih bersih */
+        }
+
+        /* Styling untuk input pencarian */
+        .datatable-search .datatable-input {
+            border: 1px solid #000 !important;
+            /* Atur ketebalan dan warna border */
+            padding: 5px;
+            border-radius: 4px;
+            box-sizing: border-box;
+            outline: none;
+            /* Hapus outline untuk tampilan yang lebih bersih */
+        }
+
+        /* Border saat elemen berada dalam keadaan focus (diklik) */
+        .datatable-search .datatable-input:focus,
+        .datatable-dropdown .datatable-selector:focus {
+            border: 1px solid #000 !important;
+            outline: none;
+        }
+    </style>
+@endpush
 @section('main')
     <div class="pagetitle">
         <h1>Peserta</h1>

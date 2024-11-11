@@ -53,6 +53,21 @@
             z-index: 9999;
             /* Make sure this is a high value */
         }
+
+        /* .datatable-dropdown .datatable-selector {
+            display: none;
+        } */
+
+        /* Styling untuk input pencarian */
+        .datatable-search .datatable-input {
+            display: none;
+        }
+
+        /* Border saat elemen berada dalam keadaan focus (diklik) */
+        /* .datatable-search .datatable-input:focus,
+        .datatable-dropdown .datatable-selector:focus {
+            display: none;
+        } */
     </style>
     @yield('head')
 
