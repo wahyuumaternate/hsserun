@@ -16,6 +16,7 @@ class PesertaExport implements FromCollection, WithHeadings, WithMapping
         return Peserta::all([
             'nama_lengkap',
             'nik',
+            'jenis_kelamin',
             'golongan_darah',
             'pekerjaan',
             'no_tlp',
@@ -39,6 +40,7 @@ class PesertaExport implements FromCollection, WithHeadings, WithMapping
         return [
             'Nama Lengkap',
             'NIK',
+            'Jenis Kelamin',
             'Golongan Darah',
             'Pekerjaan',
             'No Telepon',
@@ -62,6 +64,7 @@ class PesertaExport implements FromCollection, WithHeadings, WithMapping
         return [
             $peserta->nama_lengkap,
             "'" . (string)$peserta->nik,
+            $peserta->jenis_kelamin,
             $peserta->golongan_darah,
             $peserta->pekerjaan,
             $peserta->no_tlp,

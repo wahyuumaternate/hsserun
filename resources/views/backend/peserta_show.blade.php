@@ -32,6 +32,10 @@
                                 <td>{{ $peserta->golongan_darah }}</td>
                             </tr>
                             <tr>
+                                <th>Jenis Kelamin</th>
+                                <td>{{ $peserta->jenis_kelamin }}</td>
+                            </tr>
+                            <tr>
                                 <th>Pekerjaan</th>
                                 <td>{{ $peserta->pekerjaan }}</td>
                             </tr>
@@ -59,7 +63,7 @@
                                 <th>Status</th>
                                 <td>
                                     <a href="javascript:void(0)"
-                                        class="btn {{ $peserta->status == 'terverifikasi' ? 'btn-success' : 'btn-danger' }} text-light">
+                                        class="btn {{ $peserta->status == 'Terverifikasi' ? 'btn-success' : 'btn-danger' }} text-light">
                                         {{ $peserta->status }}
                                     </a>
                                 </td>

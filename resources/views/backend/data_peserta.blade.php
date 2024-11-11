@@ -59,7 +59,7 @@
                                                 Bukti</a></td>
                                         <td>
                                             <a href="javascript:void(0)"
-                                                class="btn {{ $peserta->status == 'terverifikasi' ? 'btn-success' : 'btn-danger' }} text-light"
+                                                class="btn {{ $peserta->status == 'Terverifikasi' ? 'btn-success' : 'btn-danger' }} text-light"
                                                 onclick="confirmStatusChange({{ $peserta->id }}, '{{ $peserta->status }}')">
                                                 {{ $peserta->status }}
                                             </a>

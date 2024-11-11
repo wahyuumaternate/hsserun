@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('nama_lengkap');
             $table->string('nik');
             $table->enum('golongan_darah', ['A', 'B', 'AB', 'O']);
+            $table->enum('jenis_kelamin', ['Pria', 'Wanita']);
             $table->string('pekerjaan');
             $table->string('no_tlp');
             $table->string('alamat');
@@ -24,7 +25,7 @@ return new class extends Migration
             $table->string('kontak_darurat');
             $table->enum('size_jersey', ['S', 'M', 'L', 'XL', 'XXL','3XL','4XL']);
             $table->string('bukti_bayar');
-            $table->enum('status', ['terverifikasi', 'tidak terverifikasi'])->default('tidak terverifikasi');
+            $table->enum('status', ['Terverifikasi', 'Sedang Diverifikasi'])->default('Sedang Diverifikasi');
             $table->timestamps();
         });
     }

@@ -73,7 +73,7 @@
                                                     <td>{{ $peserta->size_jersey }}</td>
                                                     <td>
                                                         <a href="javascript:void(0)"
-                                                            class="btn {{ $peserta->status == 'terverifikasi' ? 'btn-success' : 'btn-danger' }} text-light">
+                                                            class="btn {{ $peserta->status == 'Terverifikasi' ? 'btn-success' : 'btn-danger' }} text-light">
                                                             {{ $peserta->status }}
                                                         </a>
                                                     </td>

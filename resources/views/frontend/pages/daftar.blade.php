@@ -193,6 +193,28 @@
                             @enderror
                         </div>
 
+                        <!-- Jenis Kelamin -->
+                        <div class="col-span-1">
+                            <label for="jenis_kelamin" class="block text-sm font-medium text-gray-700">Jenis
+                                Kelamin</label>
+                            <div class="mt-2">
+                                <label class="inline-flex items-center">
+                                    <input type="radio" name="jenis_kelamin" value="Pria" required
+                                        class="form-radio text-indigo-600 border-gray-300 focus:ring-indigo-500"
+                                        {{ old('jenis_kelamin') == 'Pria' ? 'checked' : '' }}>
+                                    <span class="ml-2">Pria</span>
+                                </label>
+                                <label class="inline-flex items-center ml-4">
+                                    <input type="radio" name="jenis_kelamin" value="Wanita" required
+                                        class="form-radio text-indigo-600 border-gray-300 focus:ring-indigo-500"
+                                        {{ old('jenis_kelamin') == 'Wanita' ? 'checked' : '' }}>
+                                    <span class="ml-2">Wanita</span>
+                                </label>
+                            </div>
+                            @error('jenis_kelamin')
+                                <p class="text-sm text-red-600 mt-1">{{ $message }}</p>
+                            @enderror
+                        </div>
 
                         <!-- Bukti Bayar -->
                         <div class="col-span-1">

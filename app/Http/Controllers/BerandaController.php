@@ -82,6 +82,7 @@ class BerandaController extends Controller
                 'id_road_race' => 'required|exists:road_race,id',
                 // 'size_jersey' => 'required|string',
                 'size_jersey' => 'required|string|in:S,M,L,XL,XXL,3XL,4XL',
+                'jenis_kelamin' => 'required|string|in:Pria,Wanita',
                 'bukti_bayar' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048', // Sesuaikan panjang maksimal sesuai kebutuhan Anda
             ], [
                 'bukti_bayar.max' => 'Ukuran Gambar tidak boleh lebih dari 2 MB',
@@ -113,6 +114,7 @@ class BerandaController extends Controller
                 'id_kategori' => $request->id_kategori,
                 'id_road_race' => $request->id_road_race,
                 'size_jersey' => $request->size_jersey,
+                'jenis_kelamin' => $request->jenis_kelamin,
                 'bukti_bayar' => $path,
             ]);
 
