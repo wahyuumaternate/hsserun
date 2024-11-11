@@ -110,7 +110,7 @@
 
     <script>
         function confirmStatusChange(pesertaId, currentStatus) {
-            let newStatus = currentStatus === 'terverifikasi' ? 'tidak terverifikasi' : 'terverifikasi';
+            let newStatus = currentStatus === 'Terverifikasi' ? 'Sedang Diverifikasi' : 'Terverifikasi';
             Swal.fire({
                 title: 'Apakah kamu yakin?',
                 text: `Anda akan mengubah status menjadi ${newStatus}`,
